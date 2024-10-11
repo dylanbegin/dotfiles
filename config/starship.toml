@@ -1,0 +1,205 @@
+format = """
+[░▒▓](#295340)\
+[  ](bg:#295340 fg:#c0caf5)\
+[](bg:#A9B1D6 fg:#295340)\
+$shell$hostname$directory\
+[](bg:#777D96 fg:#A9B1D6)\
+$git_branch\
+$git_status\
+[](bg:#232433 fg:#777D96)\
+$aws\
+$azure\
+$gcloud\
+$kubernetes\
+$docker_context\
+$contaier\
+$c\
+$cmake\
+$dotnet\
+$golang\
+$haskell\
+$helm\
+$java\
+$kotlin\
+$lua\
+$nodejs\
+$perl\
+$php\
+$python\
+$rlang\
+$ruby\
+$rust\
+$swift\
+$terraform\
+$vagrant\
+[](bg:#295340 fg:#232433 )\
+$time\
+[ ](fg:#295340)\
+\n$character"""
+
+[aws]
+symbol = "󰸏"
+style = "bg:#232433"
+format = '[[ $symbol ($region) ](bg:#232433 fg:#cc7a00)]($style)'
+
+[azure]
+symbol = ""
+style = "bg:#232433"
+format = '[[ $symbol ($subscription) ](bg:#232433 fg:#0060aa)]($style)'
+
+[c]
+symbol = ""
+style = "bg:#232433"
+format = '[[ $symbol ($name $version) ](bg:#232433 fg:#abbbce)]($style)'
+
+[cmake]
+symbol = "󰇂"
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:#232433 fg:#69e192)]($style)'
+
+[container]
+symbol = ""
+style = "bg:#232433"
+format = '[[ $symbol ($name) ](bg:#232433 fg:#005cbd)]($style)'
+
+[directory]
+style = "bg:#A9B1D6 fg:#1A1B26"
+format = "[ ($path) ($read_only) ]($style)"
+read_only = ""
+read_only_style = 'red'
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"~" = ""
+"~/desktop" = "󰇄"
+"~/nextcloud/documents" = "󰈙"
+"~/nextcloud/downloads" = ""
+"~/music" = ""
+"~/nextcloud/pictures" = ""
+"~/videos" = "󰕧"
+
+[docker_context]
+symbol = "󰡨"
+style = "bg:#232433"
+format = 'via [[ $symbol ($context) ](bg:#232433 fg:#005cbd)]($style)'
+
+[dotnet]
+symbol = ""
+style = "bg:#232433"
+format = '[[ $symbol ($version $tfm) ](bg:#232433 fg:#4f2bce)]($style)'
+heuristic = true
+
+[gcloud]
+symbol = "󱇶"
+style = "bg:#232433"
+format = '[[ $symbol ($region) ](bg:#232433 fg:#4284f1)]($style)'
+
+[git_branch]
+symbol = ""
+style = "bg:#777D96"
+format = '[[ $symbol $branch ](bg:#777D96 fg:#1A1B26)]($style)'
+
+[git_status]
+style = "bg:#777D96"
+format = '[[($all_status$ahead_behind )](bg:#777D96 fg:#1A1B26)]($style)'
+
+[golang]
+symbol = "󰟓"
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:#232433 fg:#00aed8)]($style)'
+
+[haskell]
+symbol = "󰲒"
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:#232433 fg:#8f4e8b)]($style)'
+
+[helm]
+symbol = "⎈"
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:#232433 fg:#0f1689)]($style)'
+
+[hostname]
+ssh_only = false
+format = '[$hostname](bg:#A9B1D6 fg:#295340)'
+
+[java]
+symbol = "󰬷"
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:#232433 fg:#ee1e2a)]($style)'
+
+[kotlin]
+symbol = "󱈙"
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:#232433 fg:#28009b)]($style)'
+
+[kubernetes]
+symbol = "󱃾"
+style = "bg:#232433"
+format = '[[ $symbol ($context) ($cluster) ($namespace) ](bg:#232433 fg:#316ce6)]($style)'
+
+[lua]
+symbol = "󰢱"
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:#232433 fg:#02027d)]($style)'
+
+[nodejs]
+symbol = "󰎙"
+style = "bg:#232433"
+format = '[[ $symbol ($version) ($engine_version) ](bg:#232433 fg:#6da768)]($style)'
+
+[perl]
+symbol = ""
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:#232433 fg:#02027d)]($style)'
+
+[php]
+symbol = ""
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:##232433 fg:#BB9AF7)]($style)'
+
+[python]
+symbol = "󰌠"
+style = "bg:#232433"
+format = '[[ $symbol ($version) ($pyenv_prefix) ($virtualenv) ](bg:##232433 fg:#ffe873)]($style)'
+
+[rlang]
+symbol = ""
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:##232433 fg:#2266b9)]($style)'
+
+[ruby]
+symbol = ""
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:##232433 fg:#cc342d)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:#232433 fg:#A9B1D6)]($style)'
+
+[shell]
+format = '[$indicator](bg:#A9B1D6 fg:#295340)'
+bash_indicator = ' 󰨇 '
+disabled = false
+
+[swift]
+symbol = "󰛥"
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:#232433 fg:#f05138)]($style)'
+
+[terraform]
+symbol = "󱁢"
+style = "bg:#232433"
+format = '[[ $symbol ($version $workspace) ](bg:#232433 fg:#8956c4)]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#295340"
+format = '[[  $time ](bg:#295340 fg:#A9B1D6)]($style)'
+
+[vagrant]
+symbol = ""
+style = "bg:#232433"
+format = '[[ $symbol ($version) ](bg:##232433 fg:#0b4bbb)]($style)'

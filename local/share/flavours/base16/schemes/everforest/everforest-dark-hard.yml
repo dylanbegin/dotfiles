@@ -1,0 +1,18 @@
+scheme: "Everforest Dark Hard"
+author: "https://github.com/sainnhe"
+base00: "272e33" #---- background
+base01: "2e383c" #---  black
+base02: "414b50" #--   black light
+base03: "859289" #-    grey
+base04: "9da9a0" #+    grey light
+base05: "d3c6aa" #++   foreground
+base06: "e4e1cd" #+++  white
+base07: "fdf6e3" #++++ white light
+base08: "7fbbb3" #red
+base09: "d699b6" #orange
+base0A: "dbbc7f" #yellow
+base0B: "83c092" #green
+base0C: "e69875" #cyan
+base0D: "a7c080" #blue
+base0E: "e67e80" #purple
+base0F: "4C3743" #brown

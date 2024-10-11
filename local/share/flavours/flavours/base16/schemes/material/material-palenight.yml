@@ -1,0 +1,18 @@
+scheme: "Material Palenight"
+author: "Nate Peterson"
+base00: "292D3E" #---- background
+base01: "444267" #---  black
+base02: "32374D" #--   black light
+base03: "676E95" #-    grey
+base04: "8796B0" #+    grey light
+base05: "959DCB" #++   foreground
+base06: "959DCB" #+++  white
+base07: "FFFFFF" #++++ white light
+base08: "F07178" #red
+base09: "F78C6C" #orange
+base0A: "FFCB6B" #yellow
+base0B: "C3E88D" #green
+base0C: "89DDFF" #cyan
+base0D: "82AAFF" #blue
+base0E: "C792EA" #purple
+base0F: "FF5370" #brown

@@ -1,0 +1,133 @@
+@import "colors.css";
+* {
+  font-family: "RobotoMono Nerd Font";
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+window#waybar {
+  background: transparent;
+  color: @fg0;
+}
+/*-----module groups----*/
+.modules-right {
+  background: @black0;
+  color: @fg0;
+  margin: 2px 5px 0px 0px;
+}
+.modules-center {
+  background: @black0;
+  color: @fg0;
+  margin: 2px 0px 0px 0px;
+}
+.modules-left {
+	background: @black0;
+  color: @fg0;
+  margin: 2px 0px 0px 5px;
+  padding: 0px 0px 0px 0px;
+}
+/*-----modules indv----*/
+#window {
+	background: @blue;
+  color: @black0;
+  margin: 5px 5px 5px 0px;
+  padding: 0px 6px 0px 6px;
+}
+#workspaces {
+	background: @grey0;
+  color: @black0;
+  margin: 5px 5px 5px 5px;
+  padding: 0px 0px 0px 0px;
+}
+#workspaces button {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 7px 0px 7px;
+}
+#workspaces button:hover {
+	background: @purple;
+  color: @black0;
+}
+#workspaces button.focused {
+	background: @orange;
+  color: @black0;
+}
+#backlight {
+  padding: 0px 10px 0px 0px;
+}
+#battery {
+  color: @green;
+  padding: 0px 10px 0px 0px;
+}
+#clock {
+  padding: 0px 10px 0px 6px;
+}
+#clock.utc {
+	background: @grey0;
+  margin: 5px 5px 5px 5px;
+  padding: 0px 10px 0px 6px;
+}
+#cpu {
+  padding: 0px 10px 0px 0px;
+}
+#custom-launcher {
+  font-size: 18px;
+  color: #295340; /*keep void colors*/
+  background: #777D96; /*keep void colors*/
+  margin: 2px 2px 2px 6px;
+  padding: 1px 1px 1px 5px;
+}
+#custom-power {
+  color: @black0;
+  background: @red;
+  margin: 5px 5px 5px 5px;
+  padding: 1px 1px 1px 6px;
+}
+#disk {
+  padding: 0px 10px 0px 0px;
+}
+#group-hardware
+#group-keyboard
+#group-power
+#keyboard-state {
+  padding: 0px 10px 0px 10px;
+}
+#keyboard-state.cap {
+  padding: 0px 10px 0px 10px;
+}
+#memory {
+  padding: 0px 10px 0px 0px;
+}
+#network {
+  padding: 0px 10px 0px 0px;
+}
+#pulseaudio {
+  padding: 0px 10px 0px 0px;
+}
+#tray {
+  background: @grey0;
+  margin: 5px 5px 5px 5px;
+  padding: 1px 6px 1px 6px;
+}
+/*-----Indicators----*/
+#keyboard-state label.locked {
+  color: @green;
+}
+#pulseaudio.muted {
+  color: @red;
+}
+#battery.charging #battery.plugged {
+  color: @green;
+}
+#battery.warning:not(.charging) {
+	color: @yellow;
+}
+#battery.critical:not(.charging) {
+  color: #CC3436; /*keep red*/
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

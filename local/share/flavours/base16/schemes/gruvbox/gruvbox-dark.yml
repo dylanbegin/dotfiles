@@ -1,0 +1,18 @@
+scheme: "Gruvbox Dark"
+author: "Dawid Kurek"
+base00: "1d2021" #---- background
+base01: "3c3836" #---  black
+base02: "504945" #--   black light
+base03: "665c54" #-    grey
+base04: "bdae93" #+    grey light
+base05: "d5c4a1" #++   foreground
+base06: "ebdbb2" #+++  white
+base07: "fbf1c7" #++++ white light
+base08: "fb4934" #red
+base09: "fe8019" #orange
+base0A: "fabd2f" #yellow
+base0B: "b8bb26" #green
+base0C: "8ec07c" #cyan
+base0D: "83a598" #blue
+base0E: "d3869b" #purple
+base0F: "d65d0e" #brown

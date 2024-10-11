@@ -1,0 +1,5 @@
+#!/bin/sh
+
+dwlb &
+someblocks -p | dwlb -status-stdin all &
+foot --server <&-

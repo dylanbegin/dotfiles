@@ -1,0 +1,235 @@
+{
+  "output":"!DP-7", // do not show on monitor X
+	"layer": "top",
+  "position": "top",
+  "spacing": 0,
+  "margin": 0,
+
+  "modules-left": ["custom/launcher", "sway/workspaces", "sway/window"],
+  "modules-center": ["clock", "clock#utc"],
+  "modules-right": ["tray", "group/group-keyboard", "pulseaudio", "network", "cpu","group/group-hardware", "battery", "group/group-power"],
+
+  "backlight": {
+    "device": "intel_backlight",
+		"format": "{percent}%",
+		"interval": 2,
+    "on-scroll-up": "light -A 5",
+		"on-scroll-down": "light -U 5",
+    "tooltip": false
+	},
+
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
+      },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} (time)",
+    "format-icons": [" ", " ", " ", " ", " "],
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": " {:%H:%M %Z  󰸗 %a %Y-%m-%d}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode"          : "year",
+      "mode-mon-col"  : 3,
+      "weeks-pos"     : "right",
+      "on-scroll"     : 1,
+      "on-click-right": "mode",
+      "format": {
+        "months":     "<span color='#ffead3'><b>{}</b></span>",
+        "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+        "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+        }
+    },
+    "actions":  {
+      "on-click-right": "mode",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
+  },
+
+  "clock#utc": {
+    "format": "{:%H:%M %Z}",
+    "timezone": "UTC"
+  },
+
+  "cpu": {
+    "format": "|  {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7} |",
+    "interval": 2,
+    "max-length": 20,
+    "format-icons": [
+          "<span color='#69ff94'>▁</span>", // green
+          "<span color='#2aa9ff'>▂</span>", // blue
+          "<span color='#f8f8f2'>▃</span>", // white
+          "<span color='#f8f8f2'>▄</span>", // white
+          "<span color='#ffffa5'>▅</span>", // yellow
+          "<span color='#ffffa5'>▆</span>", // yellow
+          "<span color='#FF9E64'>▇</span>", // orange
+          "<span color='#F7768E'>█</span>"  // red
+     ]
+  },
+
+  "custom/launcher": {
+    "format": " ",
+    "exec": "$HOME/.config/waybar/scripts/tooltip-sway.sh",
+    "return-type": "json",
+    "interval": 30,
+    "tooltip": true,
+    "on-click": "wofi --show drun",
+    "on-click-right": "pkill wofi"
+  },
+
+  "custom/lock":{
+    "format": " 󰌾 |",
+    "on-click": "swaylock && sleep 3 && sudo zzz -z",
+    "tooltip": false
+  },
+
+  "custom/power": {
+		"format": "   ",
+		"on-click": "$HOME/.config/waybar/scripts/power.sh",
+    "tooltip": false
+  },
+
+  "custom/reboot":{
+    "format": "  |",
+    "on-clock": "reboot",
+    "tooltip": false
+  },
+
+  "disk": {
+    "format": "󰋊 {used} | ",
+    "path": "/",
+    "interval": 30
+  },
+
+  "group/group-hardware": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false,
+    },
+    "modules": [
+      "memory",
+      "disk",
+    ]
+  },
+
+  "group/group-keyboard": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false,
+    },
+    "modules": [
+      "keyboard-state",
+      "keyboard-state#cap",
+    ]
+  },
+
+  "group/group-power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false,
+    },
+    "modules": [
+      "custom/power",
+      "custom/lock",
+      "custom/reboot",
+    ]
+  },
+
+  "keyboard-state": {
+    "numlock": true,
+    "format": "{name} {icon}",
+    "format-icons": {
+        "locked": "",
+        "unlocked": " "
+    }
+  },
+
+  "keyboard-state#cap": {
+    "capslock": true,
+    "numlock": false,
+    "format": "{name} {icon}",
+    "format-icons": {
+        "locked": "",
+        "unlocked": " "
+    }
+  },
+
+  "memory": {
+    "format": " {used:0.1f}G |",
+    "interval": 2,
+    "tooltip": false,
+    "on-click": "foot -e btop"
+  },
+
+  "network": {
+		"format-ethernet": "| 󰈀 {bandwidthUpBits} {bandwidthDownBits}",
+		"format-wifi": "|   {bandwidthUpBits} {bandwidthDownBits}",
+    "format-disconnected": "󰈂 ",
+    "interval": 2,
+    "max-length": 50,
+ 		"tooltip": true,
+    "tooltip-format-ethernet": " {ipaddr}/{cidr} ",
+    "tooltip-format-wifi": " {essid} ({signalStrength}%) ",
+    "tooltip-format-disconnected": " Disconnected RIP 󰮢 ",
+	},
+
+  "pulseaudio": {
+    "format": "| {volume}% {icon} ",
+    "format-bluetooth": "| {volume}% {icon} {format_source}",
+    "format-bluetooth-muted": "| {icon} {format_source}",
+    "format-muted": "| 0% 󰝟",
+    "format-source": "| {volume}% ",
+    "format-source-muted": "| ",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": " ",
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+
+    "tray": {
+    "icon-size": 15,
+    "spacing": 10,
+    "show-passive-items": true
+  },
+
+  "sway/window": {
+    "format": "{title}",
+    "all-outputs": true,
+    "max-length": 50,
+    "tooltip": false,
+    "rewrite": {
+      "(.*Audacity).*": "󰋌 $1",
+      "(.*Armcord).*": "󰙯 $1",
+      "(.*Brave).*": " $1",
+      "(.*KeePassXC).*": "󰯄 $1",
+      "(.*foot).*": "  $1",
+      "(.*Mozilla Firefox).*": "  $1",
+      "(.*Network Connections).*": "󰈀  $1",
+      "(.*Signal).*": "󰚢 $1",
+      "(.*Slack).*": " $1"
+    }
+  },
+
+  "sway/workspaces": {
+    "all-outputs": true
+  }
+}

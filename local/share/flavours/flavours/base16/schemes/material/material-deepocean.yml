@@ -1,0 +1,18 @@
+scheme: "Material Deep Ocean"
+author: "Nate Peterson"
+base00: "212121" #---- background
+base01: "303030" #---  black
+base02: "353535" #--   black light
+base03: "4A4A4A" #-    grey
+base04: "B2CCD6" #+    grey light
+base05: "EEFFFF" #++   foreground
+base06: "EEFFFF" #+++  white
+base07: "FFFFFF" #++++ white light
+base08: "F07178" #red
+base09: "F78C6C" #orange
+base0A: "FFCB6B" #yellow
+base0B: "C3E88D" #green
+base0C: "89DDFF" #cyan
+base0D: "82AAFF" #blue
+base0E: "C792EA" #purple
+base0F: "FF5370" #brown

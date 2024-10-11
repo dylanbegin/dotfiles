@@ -1,0 +1,18 @@
+scheme: "Everforest Light"
+author: "https://github.com/sainnhe"
+base00: "f4f6e3" #---- background
+base01: "f4f0d9" #---  black
+base02: "e6e2cc" #--   black light
+base03: "a6b0a0" #-    grey
+base04: "939f91" #+    grey light
+base05: "5c6a72" #++   foreground
+base06: "e6e2cc" #+++  white
+base07: "fdf6e3" #++++ white light
+base08: "3a94c5" #red
+base09: "df69ba" #orange
+base0A: "dfa000" #yellow
+base0B: "35a77c" #green
+base0C: "f57d26" #cyan
+base0D: "8da101" #blue
+base0E: "f85552" #purple
+base0F: "eaedc8" #brown

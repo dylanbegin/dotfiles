@@ -1,0 +1,25 @@
+shell = "sh -c '{}'"
+
+# Foot terminal
+[[item]]
+file = "~/.config/foot/foot.ini"
+template = "foot"
+
+# Wofi app menu
+[[item]]
+file = "~/.config/wofi/colors.css"
+template = "wofi"
+rewrite = true
+
+# Waybar status bar
+[[item]]
+file = "~/.config/waybar/colors.css"
+template = "waybar"
+rewrite = true
+
+# Swayfx wm
+[[item]]
+file = "~/.config/sway/config"
+template = "sway"
+light = false
+hook = "swaymsg reload"

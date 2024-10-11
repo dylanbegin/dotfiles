@@ -1,0 +1,18 @@
+scheme: "Nightfox Dusk"
+author: "https://github.com/EdenEast/nightfox.nvim"
+base00: "191726" #---- background
+base01: "232136" #---  black
+base02: "2d2a45" #--   black light
+base03: "373354" #-    grey
+base04: "6e6a86" #+    grey light
+base05: "cdcbe0" #++   foreground
+base06: "e0def4" #+++  white
+base07: "eae8ff" #++++ white light
+base08: "eb6f92" #red
+base09: "ea9a97" #orange
+base0A: "f6c177" #yellow
+base0B: "a3be8c" #green
+base0C: "9ccfd8" #cyan
+base0D: "569fba" #blue
+base0E: "c4a7e7" #purple
+base0F: "63577d" #brown

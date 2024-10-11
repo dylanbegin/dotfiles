@@ -1,0 +1,18 @@
+scheme: "Kanagawa"
+author: "https://github.com/rebelot"
+base00: "1F1F28" #---- background
+base01: "16161D" #---  black
+base02: "223249" #--   black light
+base03: "54546D" #-    grey
+base04: "727169" #+    grey light
+base05: "DCD7BA" #++   foreground
+base06: "C8C093" #+++  white
+base07: "717C7C" #++++ white light
+base08: "C34043" #red
+base09: "FFA066" #orange
+base0A: "C0A36E" #yellow
+base0B: "76946A" #green
+base0C: "6A9589" #cyan
+base0D: "7E9CD8" #blue
+base0E: "957FB8" #purple
+base0F: "D27E99" #brown

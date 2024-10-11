@@ -1,0 +1,18 @@
+scheme: "Tokyo Night Moon"
+author: "Fausto-Korpsvart"
+base00: "222436" #---- background
+base01: "1e2030" #---  black
+base02: "2d3f76" #--   black light
+base03: "636da6" #-    grey
+base04: "828bb8" #+    grey light
+base05: "3b4261" #++   foreground
+base06: "828bb8" #+++  white
+base07: "c8d3f5" #++++ white light
+base08: "ff757f" #red
+base09: "ffc777" #orange
+base0A: "ffc777" #yellow
+base0B: "c3e88d" #green
+base0C: "86e1fc" #cyan
+base0D: "82aaff" #blue
+base0E: "fca7ea" #purple
+base0F: "c53b53" #brown

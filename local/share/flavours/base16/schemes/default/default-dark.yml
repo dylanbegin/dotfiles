@@ -1,0 +1,18 @@
+scheme: "Default Dark"
+author: "http://chriskempson.com"
+base00: "181818" #---- background
+base01: "282828" #---  black
+base02: "383838" #--   black light
+base03: "585858" #-    grey
+base04: "b8b8b8" #+    grey light
+base05: "d8d8d8" #++   foreground
+base06: "e8e8e8" #+++  white
+base07: "f8f8f8" #++++ white light
+base08: "ab4642" #red
+base09: "dc9656" #orange
+base0A: "f7ca88" #yellow
+base0B: "a1b56c" #green
+base0C: "86c1b9" #cyan
+base0D: "7cafc2" #blue
+base0E: "ba8baf" #purple
+base0F: "a16946" #brown
