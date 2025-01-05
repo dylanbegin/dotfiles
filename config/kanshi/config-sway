@@ -6,10 +6,11 @@ profile laptop {
   exec swaymsg workspace 1, move workspace to eDP-1
 }
 
+# 38in as primary and 34in is above it physically flipped (reason for transform).
 profile ts4dock {
   output eDP-1 disable
-  output DP-8 enable mode 3840x1600@120.045Hz adaptive_sync on position 0,1440 scale 1
-  output DP-7 enable mode 3440x1440@59.973Hz adaptive_sync on position 190,0 transform 180 scale 1
-  exec swaymsg workspace 1, move workspace to DP-8
-  exec swaymsg workspace 2, move workspace to DP-7
+  output 'LG Electronics 38GL950G #ASNCZpLQkoPd' enable mode 3840x1600@119.982Hz adaptive_sync off position 0,1440 scale 1
+  output 'LG Electronics LG HDR WQHD 0x00082DA5' enable mode 3440x1440@59.973Hz adaptive_sync off position 190,0 transform 180 scale 1
+  exec swaymsg workspace 1, move workspace to 'LG Electronics 38GL950G #ASNCZpLQkoPd'
+  exec swaymsg workspace 2, move workspace to 'LG Electronics LG HDR WQHD 0x00082DA5'
 }

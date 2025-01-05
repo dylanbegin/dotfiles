@@ -11,8 +11,8 @@ TOOLTIP='~~~Keybinds Cheatsheet~~~\n'\
 '##### App Binds #####\n'\
 'SUPER + D___________ = Menu\n'\
 'SUPER + TAB_________ = Term\n'\
-'SUPER + PRINT_______ = Grim Area\n'\
-'SUPER + SHFT + PRINT = Grim Window\n'\
+'SUPER + Z___________ = Grim Area\n'\
+'SUPER + SHFT + Z____ = Grim Window\n'\
 'SUPER + SHFT + E____ = Files\n'\
 'SUPER + SHFT + F____ = Firefox\n'\
 'SUPER + SHFT + P____ = Profanity\n'\

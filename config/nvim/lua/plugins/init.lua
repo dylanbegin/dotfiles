@@ -94,9 +94,9 @@ return {
     cmd = { 'CodeStatsXpSend', 'CodeStatsProfileUpdate' },
     config = function()
       require('codestats').setup {
-        username = 'dbegin',  -- needed to fetch profile data
+        username = 'MY-USERNAME',  -- needed to fetch profile data
         base_url = 'https://codestats.net',  -- codestats.net base url
-        api_key = 'SFMyNTY.WkdKbFoybHUjI01UZzRNamM9.E1eLssN2jZhg-IuaRfYqJ4ka816KR69lLlHPKrUZB-Q',
+        api_key = 'MY-API-KEY',
         send_on_exit = true,  -- send xp on nvim exit
         send_on_timer = true,  -- send xp on timer
         timer_interval = 60000,  -- timer interval in milliseconds (minimum 1000ms to prevent DDoSing codestat.net servers)
