@@ -10,7 +10,7 @@
 Primarily meant to go with my ![void-install](https://github.com/dylanbegin/void-install) repo but should work with other installs.
 
 ## Screenshots
-![01-nvim.png](https://github.com/dylanbegin/dotfiles/assets/01-nvim.png)
-![02-btop.png](https://github.com/dylanbegin/dotfiles/assets/02-btop.png)
-![03-gtk.png](https://github.com/dylanbegin/dotfiles/assets/03-gtk.png)
-![04-wp.png](https://github.com/dylanbegin/dotfiles/assets/04-wp.png)
+![01-nvim.png](https://github.com/dylanbegin/dotfiles/blob/main/assets/01-nvim.png)
+![02-btop.png](https://github.com/dylanbegin/dotfiles/blob/main/assets/02-btop.png)
+![03-gtk.png](https://github.com/dylanbegin/dotfiles/blob/main/assets/03-gtk.png)
+![04-wp.png](https://github.com/dylanbegin/dotfiles/blob/main/assets/04-wp.png)
