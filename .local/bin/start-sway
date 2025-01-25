@@ -1,7 +1,10 @@
 #!/bin/sh
 
 # Wayland/swayfx env vars
-export LIBVA_DRIVER_NAME=iHD #radeonsi or iHD
+# for LIBVA_DRIVER_NAME use either i965, iHD, radeonsi, nouveau or nvidia
+# You may also need to unset VDPAU_DRIVER.
+export LIBVA_DRIVER_NAME=radeonsi
+#export VDPAU_DRIVER=radeonsi
 export LIBSEAT_BACKEND=seatd
 export CLUTTER_BACKEND=wayland
 export DESKTOP_SESSION=sway
@@ -17,8 +20,8 @@ export XDG_SESSION_DESKTOP=sway
 
 # Themes
 export QT_QPA_PLATFORMTHEME="qt6ct;qt5ct"
-export QT_SELECT=Tokyonight-Dark
-export QT_STYLE_OVERRIDE=Tokyonight-Dark
+export QT_SELECT=RosePine-Main-B
+export QT_STYLE_OVERRIDE=RosePine-Main-B
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 
 # XDG base dirs

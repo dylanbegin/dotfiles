@@ -1,5 +1,4 @@
 #  Void Swayfx Dotfiles
-Screenshots coming soon...
 ## Features
 - Primary OS: ![Void Linux](https://voidlinux.org/)
 - Windows Manager: ![swayfx](https://github.com/WillPower3309/swayfx)
@@ -9,3 +8,9 @@ Screenshots coming soon...
 - Terminal: ![foot](https://codeberg.org/dnkl/foot)
 
 Primarily meant to go with my ![void-install](https://github.com/dylanbegin/void-install) repo but should work with other installs.
+
+## Screenshots
+![01-nvim.png](https://github.com/dylanbegin/dotfiles/assets/01-nvim.png)
+![02-btop.png](https://github.com/dylanbegin/dotfiles/assets/02-btop.png)
+![03-gtk.png](https://github.com/dylanbegin/dotfiles/assets/03-gtk.png)
+![04-wp.png](https://github.com/dylanbegin/dotfiles/assets/04-wp.png)
