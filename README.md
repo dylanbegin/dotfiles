@@ -9,6 +9,13 @@
 
 Primarily meant to go with my ![void-install](https://github.com/dylanbegin/void-install) repo but should work with other installs.
 
+## Installation
+1. Clone this repo `git clone https://github.com/dylanbegin/dotfiles.git`
+1. Copy repo into home directory `cp -r dotfiles/* ${HOME}/ && cp -r dotfiles/.* ${HOME}/`
+1. Set installation scripts to executible `chmod +x install-*`
+1. Run install scripts with `./install-<name>.sh`
+1. Relog into your system.
+
 ## Screenshots
 ![01-nvim.png](https://github.com/dylanbegin/dotfiles/blob/main/assets/01-nvim.png)
 ![02-btop.png](https://github.com/dylanbegin/dotfiles/blob/main/assets/02-btop.png)
