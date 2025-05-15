@@ -1,4 +1,12 @@
 return {
+  -- import blink plugin
+  { import = "nvchad.blink.lazyspec" },
+  -- blink configurations
+  --{
+  --  "Saghen/blink.cmp",
+  --   opts = { HERE },
+  --},
+
   {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
