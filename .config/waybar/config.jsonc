@@ -62,7 +62,7 @@
   },
 
   "cpu": {
-    "format": "|  {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7} |",
+    "format": "|  {usage}% {icon} |",
     "interval": 2,
     "max-length": 20,
     "format-icons": [
