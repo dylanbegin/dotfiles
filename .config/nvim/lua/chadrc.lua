@@ -21,7 +21,7 @@ M.ui = {
   -- tabufline
   tabufline = {
     enabled = true,
-    lazyload = true,
+    lazyload = false,
     order = { "treeOffset", "buffers", "tabs", "btns" },
   },
 

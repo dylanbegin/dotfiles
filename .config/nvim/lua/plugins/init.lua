@@ -1,51 +1,18 @@
 return {
-  -- import blink plugin
-  { import = "nvchad.blink.lazyspec" },
-  -- blink configurations
-  --{
-  --  "Saghen/blink.cmp",
-  --   opts = { HERE },
-  --},
-
+  -- conform configurations
   {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
     opts = require "configs.conform",
   },
 
-  -- lsp configurations
+  -- lspconfig plugin
   {
     "neovim/nvim-lspconfig",
     config = function()
       require "configs.lspconfig"
     end,
   },
-
-  -- Mason plugins for LSP
-  --{
-  --	"williamboman/mason.nvim",
-  --	opts = {
-  --		ensure_installed = {
-  --      -- lua stuff
-  --      "lua-language-server",
-  --      "stylua",
-
-  --      -- web dev stuff
-  --      "css-lsp",
-  --      "html-lsp",
-  --      "typescript-language-server",
-  --      "deno",
-  --      "prettier",
-
-  --      -- c/cpp stuff
-  --      "clangd",
-  --      "clang-format",
-
-  --      -- shell stuff
-  --      "shfmt",
-  --		},
-  --	},
-  --},
 
   -- Tresitter language color formating
   {
@@ -102,9 +69,9 @@ return {
     cmd = { 'CodeStatsXpSend', 'CodeStatsProfileUpdate' },
     config = function()
       require('codestats').setup {
-        username = 'MY-USERNAME',  -- needed to fetch profile data
+        username = 'USER',  -- needed to fetch profile data
         base_url = 'https://codestats.net',  -- codestats.net base url
-        api_key = 'MY-API-KEY',
+        api_key = 'PASSWORD',
         send_on_exit = true,  -- send xp on nvim exit
         send_on_timer = true,  -- send xp on timer
         timer_interval = 60000,  -- timer interval in milliseconds (minimum 1000ms to prevent DDoSing codestat.net servers)
@@ -112,4 +79,17 @@ return {
       }
     end,
   }
+
+  -- test new blink
+  -- { import = "nvchad.blink.lazyspec" },
+
+  -- {
+  -- 	"nvim-treesitter/nvim-treesitter",
+  -- 	opts = {
+  -- 		ensure_installed = {
+  -- 			"vim", "lua", "vimdoc",
+  --      "html", "css"
+  -- 		},
+  -- 	},
+  -- },
 }

@@ -218,14 +218,21 @@
     "tooltip": false,
     "rewrite": {
       "(.*Audacity).*": "󰋌 $1",
-      "(.*Armcord).*": "󰙯 $1",
+      "(.*Discord).*": " $1",
+      "(.*draw.io).*": " $1",
+      "(.*Legcord).*": " $1",
+      "(.*Vesktop).*": " $1",
       "(.*Brave).*": " $1",
+      "(.*Bitwarden).*": "󰯄 $1",
       "(.*KeePassXC).*": "󰯄 $1",
-      "(.*foot).*": "  $1",
-      "(.*Mozilla Firefox).*": "  $1",
-      "(.*Network Connections).*": "󰈀  $1",
+      "(.*foot).*": " $1",
+      "(.*Gimp).*": " $1",
+      "(.*Inkscape).*": " $1",
+      "(.*Mozilla Firefox).*": "󰈹 $1",
+      "(.*Network Connections).*": "󰈀 $1",
       "(.*Signal).*": "󰚢 $1",
-      "(.*Slack).*": " $1"
+      "(.*Slack).*": " $1",
+      "(.*Steam).*": " $1"
     }
   },
 
