@@ -1,27 +1,38 @@
 #!/bin/sh
 
 # Wayland/dwl env vars
-# for LIBVA_DRIVER_NAME use either i965, iHD, radeonsi, nouveau or nvidia
-# You may also need to unset VDPAU_DRIVER.
-export LIBVA_DRIVER_NAME=radeonsi
-#export VDPAU_DRIVER=radeonsi
 export LIBSEAT_BACKEND=seatd
 export CLUTTER_BACKEND=wayland
-#export DESKTOP_SESSION=dwl
+export DESKTOP_SESSION=dwl
 export ELM_DISPLAY=wl
 export GDK_BACKEND=wayland,x11
 export MOZ_ENABLE_WAYLAND=1
-export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export QT_QPA_PLATFORM="wayland;xcb"
 export SDL_VIDEODRIVER=wayland
 export XDG_CURRENT_DESKTOP=dwl
 export XDG_SESSION_TYPE=wayland
 export XDG_SESSION_DESKTOP=dwl
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
 
-# Themes
-export QT_QPA_PLATFORMTHEME="qt6ct;qt5ct"
-export QT_SELECT=Tokyonight-Dark
-export QT_STYLE_OVERRIDE=Tokyonight-Dark
+# amd gpu specific
+export LIBVA_DRIVER_NAME=radeonsi
+export VDPAU_DRIVER=radeonsi #r300 for old hw
+
+# intel gpu specific
+#export LIBVA_DRIVER_NAME=iHD #i965 for old hw
+#export VDPAU_DRIVER=va_gl
+
+# nvidia gpu specific
+#export LIBVA_DRIVER_NAME=nvidia #nouveau for foss type
+#export VDPAU_DRIVER=nvidia #nouveau
+#export GBM_BACKEND=nvidia-drm
+#export __GLX_VENDOR_LIBRARY_NAME=nvidia
+#export __GL_VRR_ALLOWED=0
+
+# themes
+export QT_SELECT=Rosepine-Dark
+export QT_STYLE_OVERRIDE=Rosepine-Dark
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 
 # XDG base dirs
